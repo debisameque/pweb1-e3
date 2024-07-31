@@ -35,8 +35,10 @@
         </head>
 
         <body>
-            <h1>Inserir Categoria</h1>
-            <form action="InserirCategoria" method="post">
+            <h1>Atualizar Categoria</h1>
+            <form action="AtualizarCategoria" method="post">
+                <label for="exampleFormControlInput0">id</label>
+                <input type="text" name="id" id="exampleFormControlInput0">
                 <label for="exampleFormControlInput1">Nome</label>
                 <input type="text" name="nome" id="exampleFormControlInput1">
                 <label for="exampleFormControlInput2">Descrição</label>

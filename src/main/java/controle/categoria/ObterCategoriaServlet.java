@@ -21,6 +21,6 @@ public class ObterCategoriaServlet extends HttpServlet{
         Categoria categoria = categoriaDAO.obterCategoria(newId);
         //saída
         //response.sendRedirect("obterCat.jsp?categoriaNome=" + categoria.getNome());
-        System.out.println(categoria.getNome());
+        System.out.println("A categoria do id "+ id + " é essa: " + categoria.getNome());
     }
 }

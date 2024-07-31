@@ -86,11 +86,11 @@ public class CategoriaDAO {
         boolean sucesso = false;
         try {
             Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/smdecommerce", "postgres", "1234");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE categoria SET nome = ?, descricao = ? WHERE id = ?");
-            preparedStatement.setInt(1,id);
-            preparedStatement.setString(2, nome);
-            preparedStatement.setString(3, descricao);
+            preparedStatement.setString(1, nome);
+            preparedStatement.setString(2, descricao);
+            preparedStatement.setInt(3,id);
             int linhasAtualizadas = preparedStatement.executeUpdate();
             sucesso = linhasAtualizadas == 1;
             preparedStatement.close();

@@ -1,8 +1,6 @@
 controle/categoria/ObterCategoriaServlet.class
-modelo/usuario/UsuarioDAO.class
+controle/categoria/DeletarCategoriaServlet.class
 modelo/categoria/CategoriaDAO.class
 controle/categoria/AtualizarCategoriaServlet.class
-modelo/categoria/Categoria.class
-modelo/usuario/Usuario.class
-controle/usuario/InserirClienteServlet.class
 controle/categoria/InserirCategoriaServlet.class
+modelo/categoria/Categoria.class

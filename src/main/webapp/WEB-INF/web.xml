@@ -18,6 +18,15 @@
         <url-pattern>/ObterCategoria</url-pattern>
     </servlet-mapping>
 
+      <servlet>
+        <servlet-name>AtualizarCategoriaServlet</servlet-name>
+        <servlet-class>controle.categoria.AtualizarCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AtualizarCategoriaServlet</servlet-name>
+        <url-pattern>/AtualizarCategoria</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             30
