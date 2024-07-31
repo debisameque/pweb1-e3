@@ -1,6 +1,7 @@
 /Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/modelo/categoria/Categoria.java
-/Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/controle/categoria/DeletarCategoriaServlet.java
 /Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/controle/categoria/InserirCategoriaServlet.java
+/Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/controle/categoria/RemoverCategoriaServlet.java
 /Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/controle/categoria/ObterCategoriaServlet.java
 /Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/controle/categoria/AtualizarCategoriaServlet.java
+/Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/controle/categoria/ObterTodasCategoriaServlet.java
 /Users/debisameque/Desktop/projetosjava/smdecommerce/src/main/java/modelo/categoria/CategoriaDAO.java

@@ -18,6 +18,15 @@
         <url-pattern>/ObterCategoria</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ObterTodasCategoriaServlet</servlet-name>
+        <servlet-class>controle.categoria.ObterTodasCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ObterTodasCategoriaServlet</servlet-name>
+        <url-pattern>/ObterTodasCategoria</url-pattern>
+    </servlet-mapping>
+
       <servlet>
         <servlet-name>AtualizarCategoriaServlet</servlet-name>
         <servlet-class>controle.categoria.AtualizarCategoriaServlet</servlet-class>
@@ -25,6 +34,15 @@
     <servlet-mapping>
         <servlet-name>AtualizarCategoriaServlet</servlet-name>
         <url-pattern>/AtualizarCategoria</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RemoverCategoriaServlet</servlet-name>
+        <servlet-class>controle.categoria.RemoverCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoverCategoriaServlet</servlet-name>
+        <url-pattern>/RemoverCategoria</url-pattern>
     </servlet-mapping>
 
     <session-config>

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import modelo.categoria.Categoria;
 import modelo.categoria.CategoriaDAO;
 
-public class ObterCategoriaServlet extends HttpServlet{
+public class RemoverCategoriaServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //entrada
@@ -18,9 +18,9 @@ public class ObterCategoriaServlet extends HttpServlet{
         //processamento
         CategoriaDAO categoriaDAO = new CategoriaDAO();
         int newId = Integer.parseInt(id);
-        Categoria categoria = categoriaDAO.obterCategoria(newId);
+        boolean removendoCategoria = categoriaDAO.removerCategoria(newId);
         //saída
         //response.sendRedirect("obterCat.jsp?categoriaNome=" + categoria.getNome());
-        System.out.println("A categoria d id "+ id + " é " + categoria.getNome());
+        System.out.println("A categoria do id "+ id + " foi removida. ");
     }
 }

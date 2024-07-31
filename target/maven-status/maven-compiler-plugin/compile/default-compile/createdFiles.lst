@@ -1,6 +1,7 @@
 controle/categoria/ObterCategoriaServlet.class
-controle/categoria/DeletarCategoriaServlet.class
 modelo/categoria/CategoriaDAO.class
 controle/categoria/AtualizarCategoriaServlet.class
-controle/categoria/InserirCategoriaServlet.class
 modelo/categoria/Categoria.class
+controle/categoria/InserirCategoriaServlet.class
+controle/categoria/ObterTodasCategoriaServlet.class
+controle/categoria/RemoverCategoriaServlet.class

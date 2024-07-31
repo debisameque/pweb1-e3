@@ -33,10 +33,8 @@
 </head>
 
 <body>
-    <h1>Buscar Categoria</h1>
-    <form action="ObterCategoria" method="post">
-        <label for="id">ID da Categoria:</label>
-        <input type="text" id="id" name="id" required>
+    <h1>Obter Todas as Categorias</h1>
+    <form action="ObterTodasCategoria" method="post">
         <button type="submit">Consultar</button>
     </form>
     <button onclick="location.href='index.jsp'">Voltar</button>

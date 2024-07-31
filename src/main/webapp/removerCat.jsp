@@ -34,5 +34,6 @@
 
         <button type="submit">Remover</button>
     </form>
+    <button onclick="location.href='index.jsp'">Voltar</button>
 </body>
 </html>

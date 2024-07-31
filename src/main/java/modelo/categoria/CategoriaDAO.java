@@ -1,5 +1,6 @@
 package modelo.categoria;
 
+import java.lang.reflect.Array;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,8 +12,8 @@ import java.util.List;
 
 public class CategoriaDAO {
 
-    public List<Categoria> obterTodas() {
-        List<Categoria> categorias = new ArrayList<>();
+    public ArrayList<Categoria> obterTodas() {
+        ArrayList<Categoria> categorias = new ArrayList<>();
         try {
             Class.forName("org.postgresql.Driver");
             Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
@@ -107,7 +108,7 @@ public class CategoriaDAO {
         boolean sucesso = false;
         try {
             Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/smdecommerce", "postgres", "1234");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM categoria WHERE id = ?");
             preparedStatement.setInt(1,id);
             int linhasRemovidas = preparedStatement.executeUpdate();

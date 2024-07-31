@@ -28,7 +28,7 @@
     <button onclick="location.href='obterCat.jsp'">Buscar Categoria</button>
     <button onclick="location.href='atualizarCat.jsp'">Editar Categoria</button>
     <button onclick="location.href='removerCat.jsp'">Remover Categoria</button>
-    <button onclick="location.href='obterTodasCat.jsp'">Mostrar Todas</button>
+    <button onclick="location.href='obterTodasCat.jsp'">Mostrar Categorias</button>
 </body>
 </html>
 
