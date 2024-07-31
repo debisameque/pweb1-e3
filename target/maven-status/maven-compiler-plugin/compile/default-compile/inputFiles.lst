@@ -1,0 +1,9 @@
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/controle/usuario/InserirClienteServlet.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/modelo/usuario/UsuarioDAO.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/modelo/categoria/Categoria.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/modelo/categoria/CategoriaDAO.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/controle/categoria/DeleteServlet.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/controle/categoria/AtualizarCategoriaServlet.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/controle/categoria/ObterCategoriaServlet.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/controle/categoria/InserirCategoriaServlet.java
+/Users/debisameque/Desktop/projetos java/smdecommerce/src/main/java/modelo/usuario/Usuario.java
