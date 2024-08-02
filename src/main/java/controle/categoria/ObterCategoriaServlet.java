@@ -2,6 +2,7 @@ package controle.categoria;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +21,8 @@ public class ObterCategoriaServlet extends HttpServlet{
         int newId = Integer.parseInt(id);
         Categoria categoria = categoriaDAO.obterCategoria(newId);
         //saída
-        //response.sendRedirect("obterCat.jsp?categoriaNome=" + categoria.getNome());
-        System.out.println("A categoria d id "+ id + " é " + categoria.getNome());
+        String mensagem = "A categoria de ID "+ id + " é: " + categoria.getNome();
+        response.sendRedirect("obterCat.jsp?nome=" + mensagem);
+        
     }
 }

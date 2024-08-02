@@ -22,7 +22,7 @@ public class AtualizarCategoriaServlet extends HttpServlet{
         int newId = Integer.parseInt(id);
         boolean sucesso = categoriaDAO.atualizarCategoria(newId, nome, descricao);
         //saída
-        //response.sendRedirect("inserirCat.jsp?sucesso=" + sucesso);
+        response.sendRedirect("atualizarCat.jsp?sucesso=" + sucesso);
         System.out.println("Categoria do id " + id + " foi atualizada com sucesso.");
     }
 }

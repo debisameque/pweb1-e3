@@ -18,17 +18,9 @@ public class ObterTodasCategoriaServlet extends HttpServlet {
             throws ServletException, IOException {
         //processamento
         CategoriaDAO categoriaDAO = new CategoriaDAO();
-        ArrayList<Categoria> categorias = categoriaDAO.obterTodas();
-        //saída
-        //response.sendRedirect("obterCat.jsp?categoriaNome=" + categoria.getNome());
-        System.out.println(categorias.size());
-        System.out.println(categorias.get(0).getNome());
-        System.out.println(categorias.get(1).getNome());
-        System.out.println(categorias.get(2).getNome());
-        System.out.println(categorias.get(3).getNome());
-        for (int i = 0; i < categorias.size()-1; i++) {
-            Categoria categoria = categorias.get(i);
-            System.out.println(categoria.getNome());
-    }
+        List<Categoria> categorias = categoriaDAO.obterTodas();
+        request.setAttribute("categorias", categorias);
+        request.getRequestDispatcher("/mostrarTodas.jsp").forward(request, response);
+
 }
 }

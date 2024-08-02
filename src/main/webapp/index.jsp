@@ -31,5 +31,3 @@
     <button onclick="location.href='obterTodasCat.jsp'">Mostrar Categorias</button>
 </body>
 </html>
-
-<%@include file="rodape.jsp" %>

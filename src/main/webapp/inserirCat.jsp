@@ -45,10 +45,11 @@
             </form>
             <button onclick="location.href='index.jsp'">Voltar</button>
         </body>
+
         <% if (request.getParameter("sucesso") !=null) { %>
             <div class="mensagem">
                 <%= (Boolean.parseBoolean(request.getParameter("sucesso")) ? "Categoria cadastrada com sucesso"
                     : "Não foi possível cadastrar a categoria" )%>
             </div>
             <% } %>
-                <%@include file="rodape.jsp" %>
+    </html>

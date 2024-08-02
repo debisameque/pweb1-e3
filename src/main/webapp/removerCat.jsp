@@ -36,4 +36,10 @@
     </form>
     <button onclick="location.href='index.jsp'">Voltar</button>
 </body>
+<% if (request.getParameter("removendoCategoria") !=null) { %>
+    <div class="mensagem">
+        <%= (Boolean.parseBoolean(request.getParameter("removendoCategoria")) ? "Categoria removida com sucesso"
+            : "Não foi possível remover a categoria" )%>
+    </div>
+    <% } %>
 </html>

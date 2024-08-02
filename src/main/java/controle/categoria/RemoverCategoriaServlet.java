@@ -20,7 +20,7 @@ public class RemoverCategoriaServlet extends HttpServlet{
         int newId = Integer.parseInt(id);
         boolean removendoCategoria = categoriaDAO.removerCategoria(newId);
         //saída
-        //response.sendRedirect("obterCat.jsp?categoriaNome=" + categoria.getNome());
+        response.sendRedirect("removerCat.jsp?removendoCategoria=" + removendoCategoria);
         System.out.println("A categoria do id "+ id + " foi removida. ");
     }
 }

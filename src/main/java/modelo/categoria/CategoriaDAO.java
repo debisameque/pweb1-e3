@@ -20,7 +20,7 @@ public class CategoriaDAO {
                     "postgres", "1234");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement
-                    .executeQuery("SELECT id, nome, descricao FROM categoria");
+                    .executeQuery("SELECT id, nome, descricao FROM categoria ORDER BY id");
             while (resultSet.next()) {
                 Categoria categoria = new Categoria();
                 categoria.setId(resultSet.getInt("id"));

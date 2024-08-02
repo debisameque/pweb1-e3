@@ -1,3 +1,5 @@
+<%@ page import="modelo.categoria.Categoria" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -39,5 +41,4 @@
     </form>
     <button onclick="location.href='index.jsp'">Voltar</button>
 </body>
-
 </html>

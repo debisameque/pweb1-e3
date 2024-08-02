@@ -41,5 +41,10 @@
     </form>
     <button onclick="location.href='index.jsp'">Voltar</button>
 </body>
+<% if (request.getParameter("nome") !=null) { %>
+    <div class="mensagem">
+        <%= request.getParameter("nome")%>
+    </div>
+    <% } %>
 
 </html>

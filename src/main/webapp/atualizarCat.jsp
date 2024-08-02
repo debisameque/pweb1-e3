@@ -49,8 +49,8 @@
         </body>
         <% if (request.getParameter("sucesso") !=null) { %>
             <div class="mensagem">
-                <%= (Boolean.parseBoolean(request.getParameter("sucesso")) ? "Categoria cadastrada com sucesso"
-                    : "Não foi possível cadastrar a categoria" )%>
+                <%= (Boolean.parseBoolean(request.getParameter("sucesso")) ? "Categoria atualizada com sucesso"
+                    : "Não foi possível atualizar a categoria" )%>
             </div>
             <% } %>
-                <%@include file="rodape.jsp" %>
+    </html>
