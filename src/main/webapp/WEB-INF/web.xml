@@ -45,6 +45,15 @@
         <url-pattern>/RemoverCategoria</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>UploadFotoCategoriaServlet</servlet-name>
+        <servlet-class>controle.categoria.UploadFotoCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadFotoCategoriaServlet</servlet-name>
+        <url-pattern>/UploadFotoCategoria</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             30

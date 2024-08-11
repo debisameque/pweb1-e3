@@ -5,6 +5,7 @@ public class Categoria {
 private int id;
 private String nome;
 private String descricao;
+private String foto;
 
 public int getId() {
     return id;
@@ -29,4 +30,13 @@ public String getDescricao(){
 public void setDescricao(String descricao){
     this.descricao = descricao;
 }
+
+public String getFoto() {
+    return foto;
+}
+
+public void setFoto(String foto) {
+    this.foto = foto;
+}
+
 }

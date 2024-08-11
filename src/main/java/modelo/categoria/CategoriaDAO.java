@@ -1,6 +1,5 @@
 package modelo.categoria;
 
-import java.lang.reflect.Array;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CategoriaDAO {
 
@@ -119,4 +117,22 @@ public class CategoriaDAO {
             System.err.println("Erro ao se comunicar com o Banco de Dados");}
         return sucesso;
     }
+
+    public boolean alterarFoto(int id, String foto) {
+        boolean resultado = false;
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE categoria SET foto = ? WHERE id = ?");
+            preparedStatement.setString(1, foto);
+            preparedStatement.setInt(2, id);
+            resultado = (preparedStatement.executeUpdate() > 0);
+            preparedStatement.close();
+            connection.close();
+        } catch (Exception ex) {
+            return false;
+        }
+        return resultado;
+    }
+
 }

@@ -2,6 +2,7 @@ controle/categoria/ObterCategoriaServlet.class
 modelo/categoria/CategoriaDAO.class
 controle/categoria/AtualizarCategoriaServlet.class
 modelo/categoria/Categoria.class
+controle/categoria/UploadFotoCategoriaServlet.class
 controle/categoria/InserirCategoriaServlet.class
 controle/categoria/ObterTodasCategoriaServlet.class
 controle/categoria/RemoverCategoriaServlet.class
